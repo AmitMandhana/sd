@@ -15,7 +15,7 @@ function App() {
   });
 
   useEffect(() => {
-    fetch("https://mern-todo-api-livid.vercel.app/todos", {
+    fetch("https://trying-hcawamgkcje7e0em.canadacentral-01.azurewebsites.net/todos", {
       method: "GET",
     }).then((resp) => {
       resp.json().then((data) => {

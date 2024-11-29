@@ -8,7 +8,7 @@ function TodoUi({ darkMode, setTodos }) {
     const [description, setDescription] = useState('');
 
     const handleTodo = (title, description) => {
-        fetch("https://mern-todo-api-livid.vercel.app/todos", {
+        fetch("https://trying-hcawamgkcje7e0em.canadacentral-01.azurewebsites.net/todos", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -19,7 +19,7 @@ function TodoUi({ darkMode, setTodos }) {
             })
         }).then((resp) => {
             // Fetch the updated list of todos after adding a new todo
-            fetch("https://mern-todo-api-livid.vercel.app/todos", {
+            fetch("hhttps://trying-hcawamgkcje7e0em.canadacentral-01.azurewebsites.net/todos", {
                 method: "GET",
             }).then((resp) => {
                 resp.json().then((data) => {
